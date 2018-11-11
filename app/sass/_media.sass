@@ -1,0 +1,422 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+@media screen and (min-device-width: 1366px)
+	.hide_menu
+		display: flex
+	.header_nav 
+		.mnu_toggle
+			display: none
+	.menu_mob
+		display: none
+
+@media screen and (max-device-width: 1366px) and (min-device-width: 1280px)
+	.hide_menu
+		display: flex
+	.decorative
+		right: -75px
+		top: -93px
+		width: 540px
+	.header_nav 
+		li:not(:last-child)
+			margin-right: 20px
+		.mnu_toggle
+			display: none
+
+	.main_sales 
+		.sales_content 
+			.button
+				margin-top: 10px
+			p
+				margin: 10px 0
+	.main-slider 
+		.slide-txt
+			line-height: 1.6
+
+	.menu_mob
+		display: none
+
+@media screen and (max-device-width: 1280px) and (min-device-width: 1024px)
+	.hide_menu
+		display: none
+	.main-slider
+		.slide-txt
+			font-size: 30px
+			margin-top: 20px
+		.slide-all
+			top: 50%
+		.slick-next
+			top: 75%
+			left: 75%
+			height: 65px
+			width: 65px
+
+	.circle
+		width: 25px
+		height: 25px
+		top: 71%
+		left: 85%
+
+	.dec_fig2 
+		img
+			width: 30px
+			height: 25px
+		left: 86%
+		top: 62%
+
+	.dec_fig
+		top: 59%
+		left: 92%
+		img
+			width: 20px
+			height: 13px
+
+	.decorative
+		right: -30px
+
+	.main_foot
+		transform: translateX(-36%)
+
+	.menu_mob
+		display: none
+
+@media screen and (max-device-width: 1024px) and (min-device-width: 768px)
+	.hide_menu, .hide_menu1, .hide_menu2
+		display: none
+	.header_nav 
+		li:not(:last-child)
+			margin-right: 20px
+		.mnu_toggle
+			display: flex
+
+	.header_nav 
+		li
+			font-size: 13px
+		.nav_cnt
+			top: 0px
+
+	.phone_warp 
+		top: 0px
+		.phone
+			font-size: 14px
+		.phone_icon
+			top: -13px
+			&::after
+				left: -7px
+				width: 50px
+				height: 50px
+			img
+				left: -5px
+				width: 28px
+				height: 28px
+
+	.main_sales
+		top: 80px
+		.sales_content 
+			padding: 0
+			margin: 0
+			p
+				margin-top: 10px
+			.button
+				margin-top: 0
+	
+	.decorative
+		right: -100px
+		top: -120px
+
+	.main-slider 
+		.slide-txt
+			line-height: 1.7
+			margin-top: 25px
+			font-size: 24px
+		.slide-all
+			top: 50%
+		.slick-next
+			height: 65px
+			width: 65px
+			top: 73%
+			left: 70%
+
+	.circle
+		top: 69%
+		left: 82%
+
+	.dec_fig2 
+		left: 83%
+		top: 58%
+		img
+			width: 30px
+			height: 25px
+
+	.dec_fig 
+		img
+			width: 22px
+			height: 14px		
+		left: 93%	
+		top: 54%
+
+	.main_foot
+		transform: translateX(-33%)
+
+	.menu_mob
+		display: none
+
+@media screen and (max-device-width: 768px) and (min-device-width: 570px)
+	.hide_menu
+		display: none
+	.header_nav 
+		li
+			font-size: 13px
+			line-height: 15px
+			// margin-right: 10px
+			.hide_p
+				display: none
+		li:not(:last-child)
+			margin-right: 15px
+		.nav_cnt
+			top: 5px
+
+	.phone_warp
+		top: 0px
+		.phone_icon
+			margin-left: 12px
+		.phone_icon
+			top: -13px
+			&::after
+				left: -7px
+				width: 50px
+				height: 50px
+			img
+				left: -5px
+				width: 28px
+				height: 28px
+
+	.main_sales
+		top: 80px
+		.sales_content 
+			padding: 0
+			margin: 0
+			h3
+				font-size: 18px
+				img
+					width: 20px
+			p
+				margin-top: 10px
+				font-size: 14px
+			.button
+				margin-top: 0
+	
+	.decorative
+		right: -170px
+		top: -120px
+
+	.main-slider 
+		.slide-txt
+			line-height: 1.7
+			margin-top: 25px
+			font-size: 24px
+		.slide-all
+			top: 46%
+			margin-left: 15px
+		.slick-next
+			height: 65px
+			width: 65px
+			top: 64%
+			left: 85%
+		.slick-dots 
+			button
+				font-size: 14px
+
+	.circle
+		top: 45%
+		left: 92%
+
+	.dec_fig2 
+		left: 91%
+		top: 55%
+		img
+			width: 30px
+			height: 25px
+
+	.dec_fig 
+		img
+			width: 22px
+			height: 14px		
+		left: 87%
+		top: 50%
+
+	.main_foot
+		max-width: 200px
+		transform: translateX(-53%)
+
+	.menu_mob
+		display: none
+
+// @media screen and (max-device-width: 570px) and (min-device-width: 414px)
+// 	.menu_mob
+// 		display: block
+	
+// 	.header_nav 
+// 		.nav_cnt
+// 			.menu_mob
+// 				font-size: 16px
+// 				@include montBold()
+// 		.mnu_toggle 
+// 			.menu_point
+// 				width: 9px
+// 				height: 9px
+
+
+@media screen and (max-device-width: 570px) and (min-device-width: 320px)
+	.menu_mob
+		display: block
+		font-size: 20px
+		@include montMd()
+
+	.header
+		.logo
+			width: 120px
+	.hide_menu
+		display: none
+	.header_nav 
+		li
+			font-size: 13px
+			line-height: 15px
+			// margin-right: 10px
+			.hide_p
+				display: none
+		li:not(:last-child)
+			margin-right: 15px
+		.nav_cnt
+			justify-content: flex-end
+			top: 5px
+			.menu_mob
+				font-size: 16px
+				@include montBold()
+		.mnu_toggle 
+			.menu_point
+				width: 9px
+				height: 9px
+
+	.phone_warp
+		top: 0px
+		.phone_icon
+			margin-left: 12px
+		.phone_icon
+			top: -13px
+			&::after
+				left: -7px
+				width: 50px
+				height: 50px
+			img
+				left: -5px
+				width: 28px
+				height: 28px
+
+	.main_sales
+		top: 80px
+		.sales_content 
+			padding: 0
+			margin: 0
+			display: flex
+			h3
+				position: relative
+				top: 10px
+				display: flex
+				font-size: 18px
+				img
+					top: -62px
+			p
+				display: none
+			.button
+				margin-top: 0
+			.for_but
+				text-align: right
+	
+	.decorative
+		right: -398px
+		top: -294px
+
+	.main-slider 
+		.slide-title
+			font-size: 16px
+			&::after
+				bottom: -11px
+				height: 9px
+		.slide-txt
+			line-height: 1.7
+			margin-top: 15px
+			font-size: 14px
+		.slick-dots
+			transform: translateX(0)
+			button
+				&::after
+					width: 10px
+					height: 10px
+		.slide-all
+			top: 40%
+			margin-left: 5px
+		.slick-next
+			height: 45px
+			width: 45px
+			top: 74%
+			left: 76%
+			&::before
+				width: 20px
+				height: 10px
+				top: calc(50% - 5px)
+	.circle
+		display: none
+
+	.dec_fig2 
+		left: 89%
+		top: 62%
+		img
+			width: 20px
+			height: 18px
+
+	.dec_fig 
+		img
+			width: 15px
+			height: 10px	
+		left: 83%
+		top: 54%
+
+	.main_foot
+		display: none
+
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+	
+// ≥992px
++media-breakpoint-down(md)
+	
+	
+// ≥768px
++media-breakpoint-down(sm)
+
+	
+// ≥576px
++media-breakpoint-down(xs)
+
+	
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
